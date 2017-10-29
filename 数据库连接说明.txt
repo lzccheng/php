@@ -1,7 +1,0 @@
-1.此项目用到面向过程和面向对象：
-面向对象 连接数据库：在 class目录 table.class.php 类，__construct 构造函数中
-
-2.所有连接数据库信息配置信息写在 根目录的 config.inc.php
-
-3.后台登录为根目录的 admin.html   账户：admin 密码：admin
- 
