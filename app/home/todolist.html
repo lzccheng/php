@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+*{
+	margin:0px;
+	padding: 0px;
+}
+#header{
+	width: 100%;
+	background-color: #323232;
+	height: 50px;
+	color:#fff;
+	/*font-size: 21px;*/
+
+}
+#header .header_content
+{
+	width: 630px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 50px;
+
+	cursor: pointer;font-size: 24px;
+
+
+}
+#header .header_content label{
+		cursor: pointer;
+		font-size: 24px;
+}
+#header .header_content input{
+border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.24), 0 1px 6px rgba(0, 0, 0, 0.45) inset;
+    float: right;
+    height: 28px;
+    margin-top: 12px;
+    text-indent: 10px;
+    width: 60%;
+}
+
+#content{
+	width: 630px;
+	
+	height: 100%;
+	margin: 0 auto;
+	line-height: 50px;
+
+	cursor: pointer;font-size: 24px;
+
+}
+#content h3{
+	position: relative;
+	margin: 10px auto; 
+}
+#content h3 span {
+	font-size: 16px;
+    display: inline-block;
+    background: #E6E6FA;
+    border-radius: 50%;
+}
+	</style>
+}
+
+
+</head>
+<body bgcolor="#CDCDCD">
+	<div id="containter">
+		<div id="header">
+			<div class="header_content">
+			<form id="form" action="javascript:postaction()">
+			<label for="title">ToDoList</label>
+			<input id="title" name="title" placeholder="添加ToDo" required="required" autocomplete="off" type="text">
+			</form>
+			 </div>
+		</div>
+		<div id="content">
+			<h3 onclick="save()">
+			正在进行
+			<span id="todocount">0</span>
+			</h3>
+					</div>
+
+
+	</div>
+</body>
+</html>
